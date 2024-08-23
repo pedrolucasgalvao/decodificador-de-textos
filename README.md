@@ -42,7 +42,7 @@ Eu decidi ir além do proposto pela Alura, decidi implementar no meu sistema uma
 ## Como Usar
 Para utilizar o descodificador de texto, basta seguir os seguintes passos:
 
-1. Acesse a página da aplicação [clicando aqui]().
+1. Acesse a página da aplicação [clicando aqui](https://decodificador-de-textos-xi.vercel.app/).
 2. Insira o texto que deseja criptografar ou descriptografar no campo correspondente.
 3. Clique no botão "Criptografar" ou "Descriptografar".
 4. O resultado da operação será exibido no lado direito da tela.
