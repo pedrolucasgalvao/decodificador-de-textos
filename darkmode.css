@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #04142E;
+}
+
+
+.cabecalho{
+    padding: 2% 8% 1% 8%;
+    background-color: #072B61;    
+}
+
+.cabecalho__icones__noite{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+.botao__lua{
+    background-color: #072B61;
+    border: none;
+    outline: none;
+}
+
+.conteudo{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5.6rem;
+}
+
+.entrada__Do__Texto{
+    padding: 0rem 0rem 0rem 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.entrada__Do__Texto__Usuario{
+    width: 37.5rem;
+    height: 23.7rem;
+    background-color: #04142E;
+    font-size: 2rem;
+    color:#FFFFFF;
+    border: none;
+    outline: none;
+    resize: none;
+    
+}
+
+.entrada__Do__Texto__Usuario::placeholder{
+    font-size: 2rem;
+    color:#FFFFFF;
+}
+
+.entrada__Do__Texto__Usuario__Orientacoes{
+    display: flex;
+    font-size: 0.7rem;
+    color:#FFFFFF;
+    gap: 0.5rem;
+}
+
+.botoes__Crip__Descrip{
+    font-size: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.botoes__Crip__Estilo{
+    width: 20.5rem;
+    height: 4.2rem;
+    font-size: 1rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 1.5rem;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .25s all;
+}
+
+.botoes__Crip__Estilo:hover{
+    background-color: #0D2170;
+    
+
+}
+
+.botoes__Descrip__Estilo{
+    width: 20.5rem;
+    height: 4.2rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    border-style: inset;
+    border: 1px solid #FFFFFF;
+    background-color: #04142E;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .25s all;
+}
+
+.botoes__Descrip__Estilo:hover{
+    background-color: #495057;
+}
+
+.saida__Do__Texto {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.saida__Do__Texto__Digitado {
+    width: 18.7rem; 
+    height: 25rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #252525;
+}
+
+.retangulo{
+    background-color: #252525; 
+    width: 23.1rem; 
+    height: 38.7rem;
+    position: absolute; 
+    top: 18%;
+    right: 3%;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px #3d3d41, -5px -5px 10px #3d3d41;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    gap: 1rem;
+}
+
+.textos__E__Img__Informativos{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: absolute; 
+    top: 13%;
+    color: #FFFFFF;
+    gap: 1rem;
+
+}
+
+/* essa classe serve para esconder as imagens e os textos quando um dos botões forem clicados e para esconder o botão copiar da tela inicial*/
+.esconder{
+    display: none;
+}
+
+.textos__Informativos__Titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.textos__Informativos__Paragrafo{
+    font-size: 1rem;
+}
+
+.saida__Do__Texto__Digitado{
+    width: 22rem; 
+    height: 37.5rem; 
+    padding: 1.6rem;
+    border-radius: 2rem;  
+    resize: none;
+    border: none;
+    
+}
+
+.saida__Do__Texto__Botao__Copiar{
+    width: 21rem;
+    height: 4.2rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    background-color: #292929;
+    color: #FFFFFF;
+}
+
+.saida__Do__Texto__Botao__Copiar:hover{
+    background-color: #495057;
+}
+
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#FFFFFF;
+}
+
+.rodape__apresentacao__links{
+    display: flex;
+    gap: 1rem;
+    padding: 4% 0% 1% 0%;
+}
+
+.img__Github, .img__Linkedin, .img__Email{
+    width: 2.5rem;   
+}
+
+.rodape__apresentacao__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 0% 1% 0%
+
+}
+
+@media (max-width: 1340px){
+
+    .body{
+        padding: 20%;
+    }
+
+    .cabecalho{
+        padding: 3% 0% 1% 0%;
+    }
+
+    .cabecalho__icones__noite{
+        justify-content: center;
+        gap:2rem;
+    }
+    
+    .conteudo{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .entrada__Do__Texto{
+        padding: 2rem  0rem 1rem 0rem;
+
+    }
+
+    .entrada__Do__Texto__Usuario{
+        width: 21.2rem;
+        height: 6.2rem;
+    }
+
+    .botoes__Crip__Descrip{
+        flex-direction: column;
+    }
+
+    .retangulo{
+        width: 20.4rem; 
+        height: 14.3rem;
+        display: flex;
+        flex-direction: column; 
+        position: relative;       
+    }
+
+    .saida__Do__Texto__Digitado{
+        width: 20.4rem; 
+        height: 14.3rem; 
+        padding: 1.6rem;
+        border-radius: 2rem;  
+        resize: none;
+        border: none;
+    }
+
+    .saida__Do__Texto__Botao__Copiar{
+        width: 17.4rem;
+        height: 4.2rem;
+        gap: 1rem;
+    }
+
+    .img__Menino{
+        display: none;
+    }
+
+      .rodape{
+        justify-content: center;
+    }
+
+}

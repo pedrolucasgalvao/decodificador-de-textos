@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de textos</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link id="css-dia" rel="stylesheet" href="style.css">
+    <link id="css-noite" rel="stylesheet" href="darkmode.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <!-- DIA -->
+        <div class="cabecalho__icones__dia">
+            <img id="a__dia" class="alura__dia" src="assets/Frame 6.svg" alt="Símbolo da Alura">
+            <button id="sol__btn" class="botao__sol" onclick="btn__sol()"><img class="botao__Tema__Dia" src="assets/tema dark/sun-color.png" alt="Imagem do Sol"></button>
+        </div>
+        <!-- NOITE -->
+        <div class="cabecalho__icones__noite">
+            <img class="alura__noite" id="a__noite" src="assets/tema dark/Group 3.svg" alt="Símbolo da Alura">
+            <button id="lua__btn" class="botao__lua" onclick="btn__lua()"><img class="noite" id="img__Noite" src="assets/tema dark/moon-color.png" alt="Imagem da Lua"></button>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="entrada__Do__Texto">
+            <textarea id="entrada__Texto" class="entrada__Do__Texto__Usuario" id="texto_Do_Usuario" placeholder="Digite seu texto" spellcheck="false"></textarea>
+            <div class="entrada__Do__Texto__Usuario__Orientacoes">
+                <img src="assets/Group.svg">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes__Crip__Descrip">
+                <button id="botao__Criptografar" onclick="criptografar__Texto()" class="botoes__Crip__Estilo">Criptografar</button>
+                <button id="botao__Descriptografar" onclick="descriptografar__Texto()" class="botoes__Descrip__Estilo">Descriptografar</button>
+            </div>
+        </section>
+        <section class="saida__Do__Texto">
+            <div class="retangulo">
+                <textarea id="saida__Texto" class="saida__Do__Texto__Digitado" id="texto_criptografado" disabled ></textarea>
+                <div class="textos__E__Img__Informativos">
+                    <img class="img__Menino" src="./assets/High quality products 1 1.svg">
+                    <h1 class="textos__Informativos__Titulo">Nenhuma mensagem encontrada</h1>
+                    <p class="textos__Informativos__Paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <button id="botao__copiar" onclick="copiar__texto()" class="saida__Do__Texto__Botao__Copiar esconder">Copiar</button>
+            </div>
+        </section>     
+    </main>
+    <footer class="rodape">
+        <div class="rodape__apresentacao__links">
+            <!-- DIA -->
+            <div class="rodape__apresentacao__links__icones__dia">
+                <a class="apresentacao__links__dia" href="https://github.com/pedrolucasgalvao"> 
+                    <img class="img__Github" src="./assets/simbolo github.png" alt="Ícone do GitHub"></a>
+
+                <a class="apresentacao__links__dia" href="https://www.linkedin.com/in/pedrolmgalvao/">
+                    <img class="img__Linkedin" src="./assets/simbolo linkedin.png" alt="Ícone do Linkedin"></a>
+                    
+                <a class="apresentacao__links__dia" href="pedromota.galvao@gmail.com">
+                    <img class="img__Email" src="./assets/e-mail.png" alt="Ícone do Email"></a>
+            </div>
+            <!-- NOITE -->
+            <div class="rodape__apresentacao__links__icones__noite">
+                <a class="apresentacao__links__noite" href="https://github.com/pedrolucasgalvao"> 
+                    <img class="img__Github" src="./assets/tema dark/github branco.png" alt="Ícone do GitHub"></a>
+
+                <a class="apresentacao__links__noite" href="https://www.linkedin.com/in/pedrolmgalvao/">
+                    <img class="img__Linkedin" src="./assets/simbolo linkedin.png" alt="Ícone do Linkedin"></a> 
+
+                <a class="apresentacao__links__noite" href="pedromota.galvao@gmail.com">
+                    <img class="img__Email" src="./assets/tema dark/email branco.png" alt="Ícone do Email"></a>
+            </div>
+        </div>
+        <div class="rodape__apresentacao__texto">
+            <p>Alura Challenge - ONE - Oracle Next Education</p>
+            <p>Desenvolvido por <strong>Pedro Galvão</strong></p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
